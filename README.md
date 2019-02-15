@@ -1,5 +1,5 @@
 # advfn-reader
-Most websites only allow free access to the financials data from a couple of quarterly reports. AVDFN gives acces to several years or even decades of data from 10-Qs. This script is intended to make this data accessible in a useful manner, in this case panda DataFrames.
+Most websites only allow free access to the financials data from a couple of quarterly reports. AVDFN gives acces to several years or even decades of data from 10-Qs. This script is intended to make this data accessible in a useful manner, in this case pandas DataFrames.
 
 
 **get_quarts**(ticker,exchange="NYSE", start_date = None, end=end_date=dt.datetime.today().date() )

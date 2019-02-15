@@ -1,6 +1,29 @@
 # advfn-reader
-Fetches all quarterly data from advfn for a given ticker.
 
-Use 
-get_quarts(ticker,exchange="NYSE)
-to get a pandas DataFrame with all quarterly data from advfn.
+
+
+get_quarts(ticker,exchange="NYSE", start_date = None, end=end_date=dt.datetime.today().date() )
+
+Fetches a pandas DataFrame with all quarterly data from advfn for a given ticker.
+
+parameters:
+
+ticker: String - The ticker to fetch.
+
+exchange: String, default "NYSE" - The exchange the stock is traded at. Defaults to a most likely one if not traded at given exchange. 
+
+start_date: String {'YYYY/MM/DD'}, default None - The date to start retrieving from. If non given the first available filing will be the start point.
+
+end_date: String {'YYYY/MM/DD'}, default current-date - The date to end retrieving at. If non given the most recent filing will be the end point.
+
+
+
+
+
+get_closest_quarter(target)
+
+Returns the colsest quarter end date for a given date.
+
+parameters:
+
+target: Date - The date look up.
